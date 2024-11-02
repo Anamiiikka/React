@@ -1,55 +1,61 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.header {
-  display: flex;
+.header{
+  display:flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid lightcoral;
+  border: 1px solid #000;
+  padding:5px;
+  margin:5px;
 }
 
-.Logo {
-  max-width: 120px;
-  width: 100%;
+.logo{
+  width:100px;
+  height:100px;
 }
 
-.nav-items > ul > li {
-  list-style: none;
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 22px;
+.nav-items{
+  display:flex;
 }
 
-.res-container {
-  margin: 5px;
-  background-color: blanchedalmond;
-  display: flex;
-  gap: 10px;
+.nav-items > ul{
+  display:flex;
+  flex-wrap:wrap;
+  list-style-type: none;
+}
+
+.nav-items > ul > li{
+  padding:5px;
+}
+/* Header component ends */
+
+/* Restaurant card component starts */
+.body{
+  padding:5px;
+  margin:5px;
+  border:1px solid #000;
+}
+
+.res-search{
+  border:1px solid #000;
+  padding:5px;
+  margin:5px;
+}
+
+.res-container{
+  display:flex;
   flex-wrap: wrap;
 }
 
-.res-card {
-  background-color: rgb(191, 200, 200);
-  max-width: 250px;
-  padding: 10px;
-  border-radius: 10px;
-  line-height: 1.4;
+.res-logo{
+  width:100%;
+  height:150px;
 }
 
-.res-card:hover {
-  background-color: rgb(43, 195, 226);
-  color: antiquewhite;
-  cursor: pointer;
+.res-card{
+  border:1px solid #000;
+  padding:5px;
+  margin:5px;
+  width:200px;
 }
-
-.res-logo {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 100%;
-}
+/* Restaurant card component ends */
 
 .filter {
   margin: 15px 0;
@@ -68,4 +74,14 @@
 .btn-filter:hover {
   color: #fff;
   background-color: palevioletred;
+}
+.shimmer-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.shimmer-card{
+  height:400px;
+  width:200px;
+  background-color:#f0f0f0;
+  margin:20px;
 }
